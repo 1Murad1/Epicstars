@@ -1,0 +1,68 @@
+@import 'mixins';
+
+#header {
+	position: sticky;
+	top: 0;
+	padding: 30px 0;
+	z-index: 100;
+	width: 100%;
+	&.shadow {
+		background: $magenta;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0 30px;
+	}
+}
+
+.languages {
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+	.language-btn {
+		@include linkMenu;
+		position: relative;
+		font-family: $LatoRegular;
+		opacity: 0.4;
+		padding-right: 10px;
+		background: none;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 1px;
+			height: 90%;
+			width: 2px;
+			background: $white;
+			opacity: 0.4;
+		}
+		&:last-child {
+			padding-right: 0;
+			&:after {
+				content: none;
+			}
+		}
+		&.language-btn-active {
+			opacity: 1;
+		}
+	}
+}
+
+.navigation {
+	.menu {
+		display: flex;
+		align-items: center;
+		gap: 0 30px;
+	}
+}
+
+.auth {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 0 30px;
+}

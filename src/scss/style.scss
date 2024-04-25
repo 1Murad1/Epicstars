@@ -1,0 +1,320 @@
+@import 'common-styles';
+
+#main {
+	width: 100%;
+
+	.main-block {
+		margin-top: -110.4px;
+		padding-top: 120px;
+		background-image: url('../img/bg-1.png');
+		background-position: bottom center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 747px;
+		.container {
+			position: relative;
+
+			.box-image {
+				width: 59.5%;
+				top: 33px;
+				right: -77px;
+				img {
+					width: 100%;
+				}
+			}
+			h1 {
+				z-index: 10;
+				position: relative;
+				width: 753px;
+				margin-bottom: 24px;
+				a {
+					color: $white;
+					border-bottom: 2px solid $white;
+				}
+			}
+			.sub-title {
+				z-index: 10;
+				position: relative;
+				width: 732px;
+				font-size: 36px;
+				line-height: 43.2px;
+				color: $white;
+				font-family: $LatoLight;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.section-services {
+		padding: 60px 0 20px;
+		.container {
+			display: flex;
+			align-items: stretch;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			gap: 50px;
+			.cart-services {
+				cursor: pointer;
+				transition: 0.5s all;
+				width: 360px;
+				box-shadow: 0px 0px 7px 0px #0000001a;
+				padding: 26px 32px;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+				&:hover {
+					transform: rotate(-10deg);
+					& + .cart-services {
+						transform: translateX(20px);
+					}
+				}
+				&:nth-child(3n) {
+					&:hover {
+						& + .cart-services {
+							transform: translateX(0px);
+						}
+					}
+				}
+				h5,
+				p,
+				a {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.section-about-company {
+		margin-top: 217px;
+		padding-bottom: 246px;
+		position: relative;
+		background: url('../img/bg-about.svg');
+		background-size: cover;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		z-index: 10;
+		&::after {
+			content: '';
+			left: 0;
+			z-index: -1;
+			top: -210px;
+			right: 0;
+			height: 217px;
+			background: url('../img/bg-about-top.svg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		.container {
+			position: relative;
+			display: flex;
+			gap: 55px;
+			align-items: flex-start;
+			.block-image {
+				position: relative;
+				left: -45px;
+				display: flex;
+				width: 550px;
+				img {
+					width: 100%;
+				}
+			}
+			.block-about {
+				flex: 1;
+				.title-top {
+					margin-bottom: 10px;
+				}
+				.titleh3 {
+					margin-bottom: 20px;
+				}
+				.description {
+					margin-bottom: 25px;
+				}
+				.description-services {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					.service-info {
+						position: relative;
+						.percent {
+							position: absolute;
+							right: 0;
+							bottom: 17px;
+							font-size: 14;
+							font-family: $OpenSansSemiBold;
+							line-height: 14px;
+							color: $blue;
+						}
+						h6 {
+							margin-bottom: 17px;
+						}
+						.scrollbar {
+							height: 7px;
+							background-color: #e3e3e5;
+							position: relative;
+							width: 100%;
+							.track-scrollbar {
+								position: absolute;
+								top: 0;
+								left: 0;
+								bottom: 0;
+								background-color: $blue;
+							}
+						}
+						&:nth-child(1) {
+							.track-scrollbar {
+								width: 90%;
+							}
+						}
+						&:nth-child(2) {
+							.track-scrollbar {
+								width: 85%;
+							}
+						}
+						&:nth-child(3) {
+							.track-scrollbar {
+								width: 70%;
+							}
+						}
+						&:nth-child(4) {
+							.track-scrollbar {
+								width: 40%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-why-choose-us {
+		padding-bottom: 170px;
+		.container {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			.block-image {
+				width: 550px;
+				position: relative;
+				right: -50px;
+			}
+			.why-choose-description {
+				flex: 1;
+				.title-top {
+					margin-bottom: 10px;
+				}
+				h3 {
+					margin-bottom: 20px;
+				}
+				.textLight {
+					margin-bottom: 40px;
+				}
+				.wrapper-employees {
+					display: flex;
+					justify-content: space-between;
+					flex-flow: row wrap;
+					width: 575px;
+					align-items: flex-start;
+					gap: 35px 20px;
+					.link-employees {
+						display: flex;
+						width: max-content;
+						align-items: center;
+						gap: 10px;
+						font-family: $OpenSansSemiBold;
+						color: $darkGray;
+						padding: 9px 55px 9px 13px;
+						box-shadow: 0px 0px 8px 0px #0000000d;
+						&:hover {
+							img {
+								transform: translateX(3px);
+							}
+						}
+						&:active {
+							box-shadow: none;
+						}
+						img {
+							transition: 0.5s all;
+							min-width: 14;
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-experience {
+		padding: 120px 0 220px;
+		background: url('../img/experience-bg.svg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		.container {
+			.titleh2 {
+				margin-bottom: 118px;
+				color: $blue;
+				text-align: center;
+			}
+			.content-experience {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+				.item {
+					width: max-content;
+					display: flex;
+					align-items: center;
+					gap: 15px;
+					.info {
+						display: flex;
+						flex-direction: column;
+						gap: 5px;
+						.title-top {
+							font-size: 16px;
+							line-height: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-career-it {
+		padding: 10px 0 40px;
+		.container {
+			.title-top {
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			h2 {
+				margin-bottom: 40px;
+				text-align: center;
+			}
+			.specialist-wrapper {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				flex-flow: row wrap;
+				gap: 40px;
+				.link-specialist {
+					width: 350px;
+					padding: 16px 0;
+					box-shadow: 0px 0px 8px 0px #0000000d;
+					border-radius: 8px;
+					text-align: center;
+					font-size: 16px;
+					line-height: 16px;
+					color: $blue;
+					font-weight: 600;
+					font-family: $PoppinsSemiBold;
+					border: 1px solid $white;
+					&:hover {
+						border: 1px solid $blue;
+					}
+					&:active {
+						box-shadow: none;
+						border: 1px solid $white;
+					}
+				}
+			}
+		}
+	}
+}

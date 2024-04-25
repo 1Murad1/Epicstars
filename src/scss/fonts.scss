@@ -1,0 +1,80 @@
+@font-face {
+	font-family: LatoLight;
+	font-display: swap;
+	src: url('../fonts/Lato-Light.woff2') format('woff2'),
+		url('../fonts/Lato-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: LatoRegular;
+	font-display: swap;
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+		url('../fonts/Lato-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: LatoMedium;
+	font-display: swap;
+	src: url('../fonts/Lato-Medium.woff2') format('woff2'),
+		url('../fonts/Lato-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: LatoExtraBold;
+	font-display: swap;
+	src: url('../fonts/Lato-ExtraBold.woff2') format('woff2'),
+		url('../fonts/Lato-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: PoppinsMedium;
+	font-display: swap;
+	src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+		url('../fonts/Poppins-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: PoppinsSemiBold;
+	font-display: swap;
+	src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+		url('../fonts/Poppins-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: PoppinsBold;
+	font-display: swap;
+	src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+		url('../fonts/Poppins-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSansLight;
+	font-display: swap;
+	src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+		url('../fonts/OpenSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: OpenSansSemiBold;
+	font-display: swap;
+	src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+		url('../fonts/OpenSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: RobotoRegular;
+	font-display: swap;
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}

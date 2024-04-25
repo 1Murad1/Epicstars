@@ -1,0 +1,274 @@
+@import 'fonts';
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mixins';
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	// background: $grey;
+}
+
+::-webkit-scrollbar-thumb {
+	// background: $primaryRed;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	// background: $primaryRed;
+}
+
+::selection {
+	// background: $bg;
+	color: $white;
+}
+
+a,
+a:focus,
+button,
+button:focus,
+input,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0 !important;
+}
+
+:focus {
+	outline: 0 !important;
+	outline-offset: 0 !important;
+}
+
+select,
+select:focus {
+	outline: 0 !important;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+//html
+html {
+}
+
+//body
+body {
+	position: relative;
+	font-family: $OpenSansLight;
+	font-size: 16px;
+	line-height: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+//picture
+picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	img {
+		width: 100%;
+	}
+}
+
+//button
+button {
+	cursor: pointer;
+	border: none;
+}
+
+//lists
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	transition: 0.5s all;
+	display: inline-block;
+	text-decoration: none;
+}
+
+//preloader
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	z-index: 1000;
+	transition: 0.5s all;
+	opacity: 1;
+	visibility: visible;
+	&__loader {
+		width: 75px;
+		height: 75px;
+		border: 10px solid $purple;
+		position: absolute;
+		border-radius: 50%;
+		border-top-color: $blue;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		animation: 2s spin infinite linear;
+	}
+	&.done {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+//link arrow top
+.link-arrow-top {
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	background-color: $purple;
+	outline: none;
+	cursor: pointer;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 90;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s all;
+	svg {
+		width: 20px;
+	}
+	&:hover {
+		background-color: $blue;
+	}
+}
+
+.box-image {
+	position: absolute;
+	z-index: 0;
+}
+
+//titles
+.titleh1 {
+	@include titleH1;
+}
+.titleh2 {
+	@include titleH2;
+}
+.titleh3 {
+	@include titleH3;
+}
+.titleh4 {
+	@include titleH4;
+}
+.titleh5 {
+	@include titleH5;
+}
+.titleh6 {
+	@include titleH6;
+}
+
+//link
+.linkMenu {
+	@include linkMenu;
+}
+
+.linkMore {
+	@include linkMore;
+}
+
+.logo {
+	@include logo;
+}
+
+.hidden {
+	display: none !important;
+}
+
+input[type='text'] {
+	font-size: 16px;
+	line-height: 36px;
+	width: 270px;
+	padding: 4px 9px;
+	border: 1px solid $lightPurple;
+	color: $lightGray;
+	font-family: $RobotoRegular;
+	background-color: $white;
+	display: inline-block;
+}
+
+input[type='checkbox'] {
+	display: none;
+	cursor: pointer;
+}
+
+.custom-checkbox {
+	min-width: 28px;
+	height: 28px;
+	width: 28px;
+	background: $white;
+	border: 2px solid $silver;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s all;
+		background-color: $purple;
+		width: 20px;
+		height: 20px;
+		left: 2px;
+		top: 2.5px;
+	}
+}
+
+.input-checkbox:checked + .custom-checkbox:before {
+	opacity: 1;
+}
+
+//buttons
+
+.button-primary-variant1 {
+	@include buttonPrimaryVariant1;
+}
+
+.button-primary-variant2 {
+	@include buttonPrimaryVariant2;
+}
+
+//text
+
+.textLight {
+	@include textLight;
+}
+
+.title-top {
+	@include titleTop;
+}
+
+//container
+.container {
+	margin: 0 auto;
+	max-width: 1180px;
+	width: 100%;
+}

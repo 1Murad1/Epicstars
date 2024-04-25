@@ -1,0 +1,140 @@
+//fonts
+$LatoLight: LatoLight, sans-serif;
+$LatoRegular: LatoRegular, sans-serif;
+$LatoMedium: LatoMedium, sans-serif;
+$LatoExtraBold: LatoExtraBold, sans-serif;
+$PoppinsMedium: PoppinsMedium, sans-serif;
+$PoppinsSemiBold: PoppinsSemiBold, sans-serif;
+$PoppinsBold: PoppinsBold, sans-serif;
+$OpenSansLight: OpenSansLight, sans-serif;
+$OpenSansSemiBold: OpenSansSemiBold, sans-serif;
+$RobotoRegular: RobotoRegular, sans-serif;
+
+//titles
+
+@mixin titleH1 {
+	font-size: 48px;
+	line-height: 57.6px;
+	color: $white;
+	font-family: $LatoExtraBold;
+}
+
+@mixin titleH2 {
+	font-size: 36px;
+	line-height: 36px;
+	color: $darkGray;
+	font-family: $PoppinsBold;
+}
+
+@mixin titleH3 {
+	font-size: 30px;
+	line-height: 36px;
+	color: $darkGray;
+	font-family: $PoppinsBold;
+}
+
+@mixin titleH4 {
+	font-size: 24px;
+	line-height: 24px;
+	color: $blue;
+	font-family: $PoppinsBold;
+}
+
+@mixin titleH5 {
+	font-size: 20px;
+	line-height: 20px;
+	color: $darkGray;
+	font-family: $PoppinsSemiBold;
+}
+
+@mixin titleH6 {
+	font-size: 16px;
+	line-height: 16px;
+	color: $darkGray;
+	font-family: $PoppinsSemiBold;
+}
+
+//links
+
+@mixin linkMenu {
+	font-size: 18px;
+	line-height: 21.6px;
+	font-family: $LatoMedium;
+	color: $white;
+	&:hover {
+		color: $purple;
+	}
+	&:active {
+		color: $blue;
+	}
+}
+
+@mixin linkMore {
+	font-size: 18px;
+	line-height: 25.2px;
+	font-family: $PoppinsMedium;
+	color: $blue;
+	&:hover {
+		color: $purple;
+	}
+	&:active {
+		color: $blue;
+	}
+}
+
+@mixin logo {
+	font-size: 32px;
+	line-height: 38.4px;
+	color: $white;
+	font-family: $LatoMedium;
+}
+
+@mixin buttonPrimaryVariant1 {
+	font-size: 12px;
+	line-height: 14.4px;
+	font-family: $LatoMedium;
+	color: $white;
+	padding: 18px 30px;
+	border-radius: 10px;
+	background-color: $purple;
+	text-transform: uppercase;
+	box-shadow: 0px 1px 10px 0px #779dd8;
+	&:hover {
+		background: $blue;
+	}
+	&:active {
+		box-shadow: none;
+	}
+}
+
+@mixin buttonPrimaryVariant2 {
+	font-size: 15px;
+	line-height: 15px;
+	font-family: $OpenSansLight;
+	font-weight: 400;
+	color: $white;
+	padding: 15px 40px;
+	border-radius: 5px;
+	background-color: $blue;
+	transition: 0.5s all;
+	&:hover {
+		background: $purple;
+	}
+	&:active {
+		background-color: $blue;
+	}
+}
+
+@mixin textLight {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: $OpenSansLight;
+	color: $darkGray;
+}
+
+@mixin titleTop {
+	color: $blue;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: $PoppinsMedium;
+}
